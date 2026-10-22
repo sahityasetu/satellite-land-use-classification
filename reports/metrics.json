@@ -1,0 +1,152 @@
+{
+  "best_model": "resnet18_frac1",
+  "test_images": 4050,
+  "test_accuracy": 0.9847,
+  "macro_f1": 0.9842,
+  "errors": 62,
+  "per_class_f1": {
+    "AnnualCrop": 0.9709,
+    "Forest": 0.9955,
+    "HerbaceousVegetation": 0.98,
+    "Highway": 0.9867,
+    "Industrial": 0.9933,
+    "Pasture": 0.9735,
+    "PermanentCrop": 0.9668,
+    "Residential": 0.9934,
+    "River": 0.9853,
+    "SeaLake": 0.9967
+  },
+  "top_confusions": [
+    {
+      "actual": "AnnualCrop",
+      "predicted": "PermanentCrop",
+      "count": 10
+    },
+    {
+      "actual": "HerbaceousVegetation",
+      "predicted": "Pasture",
+      "count": 6
+    },
+    {
+      "actual": "PermanentCrop",
+      "predicted": "HerbaceousVegetation",
+      "count": 6
+    },
+    {
+      "actual": "PermanentCrop",
+      "predicted": "AnnualCrop",
+      "count": 4
+    },
+    {
+      "actual": "Industrial",
+      "predicted": "Residential",
+      "count": 4
+    }
+  ],
+  "runs": [
+    {
+      "run": "cnn_frac0.05",
+      "model": "cnn",
+      "train_fraction": 0.05,
+      "train_images": 945,
+      "params": 1175786,
+      "epochs": 40,
+      "image_size": 64,
+      "train_minutes": 2.1,
+      "best_val_acc": 0.8805,
+      "test_acc": 0.8899,
+      "test_macro_f1": 0.8846
+    },
+    {
+      "run": "cnn_frac0.1",
+      "model": "cnn",
+      "train_fraction": 0.1,
+      "train_images": 1890,
+      "params": 1175786,
+      "epochs": 30,
+      "image_size": 64,
+      "train_minutes": 2.7,
+      "best_val_acc": 0.9143,
+      "test_acc": 0.9205,
+      "test_macro_f1": 0.9183
+    },
+    {
+      "run": "cnn_frac0.25",
+      "model": "cnn",
+      "train_fraction": 0.25,
+      "train_images": 4725,
+      "params": 1175786,
+      "epochs": 25,
+      "image_size": 64,
+      "train_minutes": 3.7,
+      "best_val_acc": 0.9533,
+      "test_acc": 0.9573,
+      "test_macro_f1": 0.9564
+    },
+    {
+      "run": "cnn_frac1",
+      "model": "cnn",
+      "train_fraction": 1.0,
+      "train_images": 18900,
+      "params": 1175786,
+      "epochs": 20,
+      "image_size": 64,
+      "train_minutes": 9.7,
+      "best_val_acc": 0.978,
+      "test_acc": 0.977,
+      "test_macro_f1": 0.9765
+    },
+    {
+      "run": "resnet18_frac0.05",
+      "model": "resnet18",
+      "train_fraction": 0.05,
+      "train_images": 945,
+      "params": 11181642,
+      "epochs": 15,
+      "image_size": 128,
+      "train_minutes": 2.1,
+      "best_val_acc": 0.9481,
+      "test_acc": 0.9556,
+      "test_macro_f1": 0.9543
+    },
+    {
+      "run": "resnet18_frac0.1",
+      "model": "resnet18",
+      "train_fraction": 0.1,
+      "train_images": 1890,
+      "params": 11181642,
+      "epochs": 12,
+      "image_size": 128,
+      "train_minutes": 2.4,
+      "best_val_acc": 0.9662,
+      "test_acc": 0.9669,
+      "test_macro_f1": 0.9657
+    },
+    {
+      "run": "resnet18_frac0.25",
+      "model": "resnet18",
+      "train_fraction": 0.25,
+      "train_images": 4725,
+      "params": 11181642,
+      "epochs": 10,
+      "image_size": 128,
+      "train_minutes": 4.2,
+      "best_val_acc": 0.977,
+      "test_acc": 0.9738,
+      "test_macro_f1": 0.9732
+    },
+    {
+      "run": "resnet18_frac1",
+      "model": "resnet18",
+      "train_fraction": 1.0,
+      "train_images": 18900,
+      "params": 11181642,
+      "epochs": 8,
+      "image_size": 128,
+      "train_minutes": 8.6,
+      "best_val_acc": 0.9825,
+      "test_acc": 0.9847,
+      "test_macro_f1": 0.9842
+    }
+  ]
+}

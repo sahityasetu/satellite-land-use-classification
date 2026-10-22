@@ -1,0 +1,115 @@
+{
+  "run": "cnn_frac1",
+  "model": "cnn",
+  "train_fraction": 1.0,
+  "train_images": 18900,
+  "params": 1175786,
+  "epochs": 20,
+  "image_size": 64,
+  "train_minutes": 9.7,
+  "best_val_acc": 0.978,
+  "test_acc": 0.977,
+  "test_macro_f1": 0.9765,
+  "history": [
+    {
+      "epoch": 1,
+      "train_loss": 1.2231,
+      "val_acc": 0.7227
+    },
+    {
+      "epoch": 2,
+      "train_loss": 1.0443,
+      "val_acc": 0.7528
+    },
+    {
+      "epoch": 3,
+      "train_loss": 0.9185,
+      "val_acc": 0.8412
+    },
+    {
+      "epoch": 4,
+      "train_loss": 0.8751,
+      "val_acc": 0.8568
+    },
+    {
+      "epoch": 5,
+      "train_loss": 0.8215,
+      "val_acc": 0.8931
+    },
+    {
+      "epoch": 6,
+      "train_loss": 0.7709,
+      "val_acc": 0.8625
+    },
+    {
+      "epoch": 7,
+      "train_loss": 0.7403,
+      "val_acc": 0.921
+    },
+    {
+      "epoch": 8,
+      "train_loss": 0.7138,
+      "val_acc": 0.8279
+    },
+    {
+      "epoch": 9,
+      "train_loss": 0.6917,
+      "val_acc": 0.8931
+    },
+    {
+      "epoch": 10,
+      "train_loss": 0.6749,
+      "val_acc": 0.9341
+    },
+    {
+      "epoch": 11,
+      "train_loss": 0.6662,
+      "val_acc": 0.9459
+    },
+    {
+      "epoch": 12,
+      "train_loss": 0.6568,
+      "val_acc": 0.9314
+    },
+    {
+      "epoch": 13,
+      "train_loss": 0.6432,
+      "val_acc": 0.9422
+    },
+    {
+      "epoch": 14,
+      "train_loss": 0.6309,
+      "val_acc": 0.9667
+    },
+    {
+      "epoch": 15,
+      "train_loss": 0.6179,
+      "val_acc": 0.9657
+    },
+    {
+      "epoch": 16,
+      "train_loss": 0.6026,
+      "val_acc": 0.9691
+    },
+    {
+      "epoch": 17,
+      "train_loss": 0.5955,
+      "val_acc": 0.9738
+    },
+    {
+      "epoch": 18,
+      "train_loss": 0.5894,
+      "val_acc": 0.978
+    },
+    {
+      "epoch": 19,
+      "train_loss": 0.5842,
+      "val_acc": 0.9753
+    },
+    {
+      "epoch": 20,
+      "train_loss": 0.5813,
+      "val_acc": 0.9763
+    }
+  ]
+}

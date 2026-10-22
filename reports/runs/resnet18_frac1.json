@@ -1,0 +1,55 @@
+{
+  "run": "resnet18_frac1",
+  "model": "resnet18",
+  "train_fraction": 1.0,
+  "train_images": 18900,
+  "params": 11181642,
+  "epochs": 8,
+  "image_size": 128,
+  "train_minutes": 8.6,
+  "best_val_acc": 0.9825,
+  "test_acc": 0.9847,
+  "test_macro_f1": 0.9842,
+  "history": [
+    {
+      "epoch": 1,
+      "train_loss": 0.8346,
+      "val_acc": 0.9311
+    },
+    {
+      "epoch": 2,
+      "train_loss": 0.6977,
+      "val_acc": 0.9198
+    },
+    {
+      "epoch": 3,
+      "train_loss": 0.6729,
+      "val_acc": 0.9553
+    },
+    {
+      "epoch": 4,
+      "train_loss": 0.6366,
+      "val_acc": 0.9607
+    },
+    {
+      "epoch": 5,
+      "train_loss": 0.604,
+      "val_acc": 0.9765
+    },
+    {
+      "epoch": 6,
+      "train_loss": 0.5755,
+      "val_acc": 0.977
+    },
+    {
+      "epoch": 7,
+      "train_loss": 0.552,
+      "val_acc": 0.9825
+    },
+    {
+      "epoch": 8,
+      "train_loss": 0.5428,
+      "val_acc": 0.9825
+    }
+  ]
+}
